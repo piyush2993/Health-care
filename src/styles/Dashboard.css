@@ -1,0 +1,145 @@
+.dashboard-overview {
+  border-radius: 16px;
+  padding: 20px;
+  max-width: 1000px;
+  margin: 20px auto;
+  background-color: rgb(248, 249, 249);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+  gap: 10px;
+}
+
+.week-link,
+.details-link a {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.dashboard-body {
+  display: flex;
+  justify-content: space-between;
+  /* flex-wrap: wrap;*/
+  gap: 20px;
+}
+
+.anatomy-section {
+  position: relative;
+  width: 60%;
+  min-width: 280px;
+  border-radius: 50px;
+  flex: 1 1 100%;
+}
+
+.anatomy-image {
+  height: auto;
+  width: 100%;
+  max-width: 300px;
+  display: block;
+  margin: 30px auto;
+  border-radius: 16px;
+}
+
+.indicator {
+  position: absolute;
+  padding: 6px 10px;
+  background: white;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.heart {
+  top: 15%;
+  right: 10%;
+}
+
+.leg {
+  bottom: 10%;
+  left: 10%;
+}
+
+.health-cards {
+  width: 35%;
+  min-width: 250px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  flex: 1 1 100%;
+  margin-top: 0;
+}
+
+.health-card {
+  background-color: rgb(225, 246, 246);
+  padding: 14px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.health-card .icon {
+  font-size: 24px;
+}
+
+.health-card .title {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.health-card .date {
+  font-size: 12px;
+  color: gray;
+}
+
+.bar-bg {
+  background: #e5e5e5;
+  height: 6px;
+  width: 100px;
+  border-radius: 3px;
+  margin-top: 4px;
+}
+
+.bar {
+  height: 6px;
+  width: 60%;
+  border-radius: 3px;
+}
+
+.details-link {
+  margin-top: 480px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .dashboard-body {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .anatomy-section {
+    width: 100%;
+    text-align: center;
+  }
+
+  .health-cards {
+    width: 100%;
+    margin-top: 30px;
+  }
+
+  .indicator {
+    font-size: 12px;
+    padding: 4px 8px;
+  }
+  .details-link {
+    margin-top: 20px;
+  }
+}

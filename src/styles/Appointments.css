@@ -1,0 +1,87 @@
+.appointment {
+  background-color: rgb(248, 249, 249);
+  padding: 20px;
+  border-radius: 12px;
+  margin: 20px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.appointment h2 {
+  font-size: 1.25rem;
+  color: #2b2d42;
+  margin-bottom: 20px;
+}
+
+.top-cards {
+  margin-bottom: 20px;
+}
+
+.card-dentist span,
+.card-physio span {
+  background-color: transparent;
+  color: black;
+}
+
+.card-physio {
+  background-color: #dfe3fc;
+}
+
+.card1 {
+  margin-bottom: 20px;
+}
+
+.card1 h3 {
+  font-size: 1rem;
+  color: #a0a0a0;
+  margin-bottom: 10px;
+}
+
+.sec-1 {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.cards {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 15px 20px;
+  border-radius: 20px;
+  min-width: 180px;
+  max-width: 300px;
+  height: auto;
+  font-size: 1rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  background-color: rgb(207, 222, 249);
+  flex: 1 1 250px;
+}
+
+.cards span:first-child {
+  font-weight: 600;
+  color: #2b2d42;
+  margin-bottom: 5px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.cards span:last-child {
+  font-size: 0.875rem;
+  color: #5c5c5c;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .sec-1 {
+    gap: 15px;
+  }
+
+  .cards {
+    width: 100%;
+    max-width: 100%;
+    flex: 1 1 100%;
+  }
+}

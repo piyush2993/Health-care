@@ -1,0 +1,145 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(214, 236, 243);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.main {
+  background-color: white;
+  margin: 2%;
+  min-height: 100vh;
+  border: 1px solid white;
+  border-radius: 40px;
+  padding: 1rem;
+}
+
+.main .top {
+  margin: 1rem;
+  height: auto;
+  width: 100%;
+}
+
+/* TopBar Area */
+.top-bar {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  gap: 1rem;
+  background: white;
+  padding: 0.5rem 1rem;
+}
+
+.top-logo {
+  flex: 1;
+  min-width: 150px;
+  font-size: 2rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+}
+
+.top-search {
+  flex: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.top-search input {
+  width: 100%;
+  max-width: 400px;
+  height: 40px;
+  padding: 0 1rem;
+  border: 1px solid grey;
+  border-radius: 10px;
+  margin: 0.5rem;
+}
+
+.top-search .button {
+  height: 30px;
+  width: 30px;
+  border: 1px solid grey;
+  border-radius: 5px;
+  background: white;
+  color: rgb(15, 15, 161);
+}
+
+.top-avatar {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 1rem;
+}
+
+.top-avatar > img {
+  height: 50px;
+  width: 50px;
+  background: rgb(9, 177, 243);
+  border-radius: 15px;
+}
+
+.top-avatar .img {
+  height: 60px;
+  width: 60px;
+  background: white;
+  color: rgb(15, 15, 161);
+}
+
+/* Main Dashboard Area */
+.left {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-top: 1rem;
+}
+
+/* Left Navbar */
+.left-bar {
+  width: 100%;
+  max-width: 250px;
+  background: white;
+}
+
+/* Dashboard-Routes */
+.left-route {
+  flex: 1;
+  min-width: 300px;
+  background: white;
+}
+
+/* Responsive Design Breakpoints */
+@media (max-width: 768px) {
+  .top-bar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .top-logo,
+  .top-search,
+  .top-avatar {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .left {
+    flex-direction: column;
+  }
+
+  .left-bar,
+  .left-route {
+    width: 100%;
+  }
+}
